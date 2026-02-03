@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.container {
+  min-height: 100vh;
+  background-color: rgba(36, 37, 47);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 900px;
+  max-width: 95%;
+  min-height: 480px;
+
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  display: flex;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.left {
+  background: rgb(55,58,73);
+  color: rgb(192, 192, 192);
+
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+
+  gap: 5px;
+}
+
+.left button{
+    background: none;
+    border: 1px solid white;
+    padding: 15px 60px 15px 60px;
+
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+}
+
+.left button:hover{
+    background-color: #14968d;
+    cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  text-align: center;
+  background-color: white;
+}
+
+.right form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 30px;
+}
+
+.right input{
+    border: 1px solid rgba(172, 172, 172, 0.603);
+    padding: 12px 40px 12px 40px;
+    border-radius: 30px;
+}
+
+.right input:focus{
+    outline: none;
+}
+
+.right button{
+    background-color: rgb(55,58,73);
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+
+    color: white;
+    border: none;
+}
+
+.right button:hover{
+    background-color: rgb(46, 49, 61);
+    cursor: pointer;
+}
+
+.right h2{
+    color: rgb(55,58,73);
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+
+  margin-bottom: 25px;
+}
+
+.infos{
+    background: none;
+    border: 1px solid rgb(172, 172, 172);
+    color: rgb(141, 141, 141);
+
+    border-radius: 100%;
+    width: 25px;
+    height: 24px;
+
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-weight: bold;
+}
+
+.infos:hover{
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+/* Segunda pagina */
+
+.container {
+  min-height: 100vh;
+  background: rgba(36, 37, 47, 0.767);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 900px;
+  max-width: 95%;
+  min-height: 480px;
+
+  background: none;
+  border-radius: 16px;
+  overflow: hidden;
+
+  display: flex;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  border: none;
+}
+
+.leftInvert {
+  background: #16a39a;
+  color: rgb(192, 192, 192);
+
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+
+  gap: 5px;
+}
+
+.leftInvert button{
+    background: none;
+    border: 1px solid white;
+    padding: 15px 60px 15px 60px;
+
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+}
+
+.leftInvert button:hover{
+    background-color: #14968d;
+    cursor: pointer;
+}
+
+.rightInvert {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+
+  text-align: center;
+}
+
+.rightInvert form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rightInvert input{
+    border: 1px solid rgba(172, 172, 172, 0.603);
+    padding: 12px 40px 12px 40px;
+    border-radius: 30px;
+}
+
+.rightInvert input:focus{
+    outline: none;
+}
+
+.rightInvert button{
+    background-color: #16a39a;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+
+    color: white;
+    border: none;
+}
+
+.rightInvert button:hover{
+    background-color: #14968d;
+    cursor: pointer;
+}
+
+.rightInvert h2{
+    color: #16a39a;
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+
+  margin-bottom: 25px;
+}
+
+.infos{
+    background: none;
+    border: 1px solid rgb(172, 172, 172);
+    color: rgb(141, 141, 141);
+
+    border-radius: 100%;
+    width: 25px;
+    height: 24px;
+
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-weight: bold;
+}
+
+.infos:hover{
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+.load{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

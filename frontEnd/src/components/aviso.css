@@ -1,0 +1,58 @@
+
+.imgMessage{
+    width: 30px;
+}
+
+.containerUserMessage3{
+    background-color: none;
+    width: 58vw;
+    margin-right: auto;
+
+    max-height: 500px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.containerMsg3{
+    background-color: rgb(177, 177, 177);
+    display: inline-flex;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 5px 5px 5px 5px;
+    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: fit-content;
+
+    position: relative;
+    min-height: 30px;
+    max-height: 31px;
+
+    padding: 0 10px 0 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.divUserMessage3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.mensagem3{
+    color: black;
+}
+
+.mensagem3 p {
+    word-break: break-word;
+}

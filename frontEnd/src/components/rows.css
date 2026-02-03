@@ -1,0 +1,78 @@
+
+.persona{
+    width: 100%;
+    height: 80px;
+    background: none;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 5px;
+    flex-direction: column;
+    background-color: none;
+
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+.persona:hover{
+    background-color: rgba(37, 150, 190);
+}
+
+.persona img{
+    width: 25px;
+    margin-right: 15px;
+    filter: invert(100%);
+
+    margin-top: 15px;
+}
+
+.user{
+    height: 40%;
+    width: 90%;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    padding-left: 20px;
+    color: white;
+    background: none;
+    gap: 5px;
+}
+
+.message{
+    height: 30%;
+    width: 80%;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    margin-left: 60px;
+    color: rgba(255, 255, 255, 0.363);
+    background: none;
+}
+
+.message p {
+    height: 100%;
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.statusStyle{
+    margin-left: auto;
+}
+
+.on {
+    color: rgb(69, 69, 170);
+}
+
+.off {
+    color: rgb(196, 80, 80);
+}

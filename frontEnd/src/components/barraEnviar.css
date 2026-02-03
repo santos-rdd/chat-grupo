@@ -1,0 +1,53 @@
+
+.barra{
+    width: 100%;
+    height: 10%;
+    background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    background: none;
+}
+
+.inputBarra{
+    width:  650px;
+    height: 45px;
+    border: none;
+
+    border-radius: 25px;
+    background-color: rgba(55, 58, 73);
+    color: white;   
+
+    padding: 0 60px 0 20px;
+    margin-top: 30px;
+}
+
+.paperSend{
+    position: absolute;
+    z-index: 2;
+    filter: invert(100%);
+
+    width: 18px;
+    right: 110px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.paperSend:hover{
+    filter: invert(60%);
+}
+
+.inputBarra.active{
+    background-color: white;
+    color: rgba(55, 58, 73);
+}
+
+.inputBarra input::placeholder{
+    color: white;
+}
+.inputBarra input::placeholder.active{
+    color: rgba(55, 58, 73);
+}

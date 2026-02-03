@@ -1,0 +1,77 @@
+
+.containerImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.containerImg img{
+    width: 100px;
+    filter: invert(60%);
+}
+
+.names{
+    width: 100%;
+    height: 50px;
+    background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.274);
+    font-size: 1.2rem;
+    gap: 5px;
+}
+
+.atualizar{
+    background: none;
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.atualizar h2{
+    color: rgba(255, 255, 255, 0.274);
+    margin-right: 15px;
+}
+
+.atualizar input {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    padding: 10px 30px 10px 30px;
+
+    border-radius: 5px;
+    margin-right: 15px;
+    color: white;
+}
+
+.atualizar button{
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    border-radius: 5px;
+    margin-right: 92px;
+
+    color: rgba(255, 255, 255, 0.274);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.atualizar button img{
+    width: 15px;
+}
