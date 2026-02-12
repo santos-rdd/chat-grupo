@@ -5,6 +5,7 @@ import BarraEnviar from '../components/barraEnviar.jsx';
 import Aviso from '../components/aviso.jsx';
 import { useState, useEffect } from 'react';
 import socket from '../../socket/socket.js'; 
+import { toast } from 'react-toastify';
 
 export default function Chat(props){
 
@@ -20,15 +21,19 @@ export default function Chat(props){
     const [ saiu, setSaidos ] = useState([]);
     const [ eventos, setEventos ] = useState([]);
 
+    console.log(eventos);
+    console.log(mensagem);
+    console.log(mensagemInput);
+    console.log(userMensagem);
+
     useEffect(()=>{
         if(!user) return;
-
         setUsuarios(p => 
             { if (p.includes(user)) return p;
                 return [...p, user]
             });
 
-            setEventos(p => [
+            setEventos( p => [
             ...p,
             {
                 tipo: 'aviso',
@@ -39,6 +44,11 @@ export default function Chat(props){
     },[user]);
 
     useEffect(()=>{
+
+        socket.on('erroMensagem', (data) =>{
+            toast.error(data.erro);
+        })
+
         socket.on('mensagemCliente', (data)=>{
             if(!data.nome?.trim()) return;
             if(!data.mensagem?.trim()) return;
@@ -60,6 +70,7 @@ export default function Chat(props){
 
         return () => {
             socket.off('mensagemCliente');
+            socket.off('erroMensagem');
         };
     }, []);
 

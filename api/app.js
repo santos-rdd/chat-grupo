@@ -41,10 +41,14 @@ io.on('connection', (socket)=>{
         }
     });
 
-    socket.on('serverMensagem', (retorno)=> {
+    socket.on('serverMensagem', (retorno)=> {   
+        
+        if(!socket.user) { return io.emit('erroMensagem', {erro: "Infelizmente tivemos um problema no nosso servidor!"}) };
+
         io.emit('mensagemCliente', {
-            id: socket.user.id, 
-            mensagem: retorno.mensagem
+            id: socket.id, 
+            nome: socket.user.nome,
+            mensagem: retorno.mensagem,
         });
     });
 });

@@ -36,6 +36,7 @@ export default function Info (){
     useEffect(()=>{
         if(!user) return;
         socket.connect();
+        
 
         socket.on('connect', ()=>{
             console.log("Usuario conectado: ", socket.id);
